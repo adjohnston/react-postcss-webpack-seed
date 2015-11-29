@@ -1,5 +1,5 @@
 import React  from 'react';
-import Button from '../app/atoms/button';
+import Button from '../atoms/button.jsx';
 
 export default class DemoApp extends React.Component {
   render() {
