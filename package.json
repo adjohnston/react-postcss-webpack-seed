@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A basic quick start React + PostCSS + Webpack seed project",
   "scripts": {
-    "bundle": "webpack --progress --color"
+    "bundle": "webpack --progress --color",
+    "watch":  "webpack --watch",
+    "serve":  "webpack-dev-server --content-base ./"
   },
   "devDependencies": {
     "webpack": "^1.12.9"
