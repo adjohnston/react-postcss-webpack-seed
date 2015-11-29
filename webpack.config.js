@@ -1,16 +1,24 @@
+var path = require('path');
+
 module.exports = {
-  context: __dirname + '/src',
-  entry: './app.js',
+  entry: path.resolve(__dirname, 'src/app.js'),
 
   output: {
     path: __dirname,
     filename: './bundle.js'
   },
 
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
+        include: [
+          path.resolve(__dirname, 'src/app/')
+        ],
         exclude: 'node_modules',
         loader: 'babel',
         query: {

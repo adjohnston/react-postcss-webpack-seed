@@ -1,5 +1,5 @@
 import React    from 'react';
 import ReactDOM from 'react-dom';
-import DemoApp  from './app/apps/demo-app.jsx';
+import DemoApp  from './app/apps/demo-app';
 
-console.log(React);
+ReactDOM.render(<DemoApp />, document.getElementById('appContainer'));
